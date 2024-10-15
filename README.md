@@ -48,7 +48,7 @@ Nadpisy prvního řádu nejsou číslované. Toto je převzato z výchozího nas
 
 ### Uvozovky
 
-Pokud chceme uvodit kus textu, používáme k tomu `\enquote{}` z knihovny `scquotes`.
+Pokud chceme uvodit kus textu, používáme k tomu `\enquote{}`.
 
 ### Obrázky
 
