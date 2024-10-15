@@ -1,0 +1,15 @@
+\usepackage{graphicx}
+\makeatletter
+\providecommand{\img}[3][18em]{
+	\@ifstar{
+		\begin{figure}[h!]
+	}{
+		\begin{figure}
+	}
+		\centering
+		\includegraphics[height=#1]{#2}
+		\caption{#1}
+		\label{#2}
+	\end{figure}
+}
+\makeatother
