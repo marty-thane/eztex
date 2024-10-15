@@ -25,6 +25,5 @@ Přepsáním výchozích hodnot si dokument přizpůsobíme na míru. Některá 
 Druhou částí jsou moduly, což není nic jiného než kusy kódu, které do našeho dokumentu zavádí nějakou funkcionalitu, např. podporu pro obrázky. microtyping... V souboru je poznáme podle tvaru:
 ```tex
 \input{moduly/<nazev>}
-}
 ```
 Všechny moduly jsou ve výchozím nastavení povoleny. Toto doporučujeme neměnit, pokud nevíte, co děláte. Každý modul je v souboru okomentovaný a vysvětlený.
