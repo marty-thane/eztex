@@ -46,6 +46,10 @@ V následující sekci se dozvíte o zvláštnostech a specifikách EZTeXu a jak
 
 Nadpisy prvního řádu nejsou číslované. Toto je převzato z výchozího nastavení některých objektů (obsah, odkazy). Z technických důvodů má EZTeX svůj vlastní příkaz `\nsection{}`. Používejte ho místo klasického `\section{}`
 
+### Uvozovky
+
+Pokud chceme uvodit kus textu, používáme k tomu `\enquote{}` z knihovny `scquotes`.
+
 ### Obrázky
 
 Ujistěte se, že máte povolený modul `obrazky.tex`. Ten poskytuje podporu pro grafiku a příkaz `\img` pro pohodlné vkládání obrázků. Povinnými parametry jsou popisek a cesta k souboru, volitelně lze potom specifikovat výšku, tedy velikost.
