@@ -2,9 +2,9 @@
 
 **UPOZORNĚNÍ: Toto je work-in-progress, projekt se bude v budoucnu rozvíjet. Pravidelně aktualizujte svoji instalaci.**
 
-EZTeX je šablonová nadstavba nad LuaLaTeX/BibLaTeX pro tvorbu seminárních, maturitních a jiných prací. Jejím účelem je oddělení procesu tvorby dokumentu od jeho sazby, přičemž o sazbu a plnění typografických norem je postaráno automaticky.
+EZTeX je šablonová nadstavba nad LuaLaTeX/BibLaTeX pro tvorbu seminárních, maturitních a jiných prací. Jejím účelem je oddělení procesu tvorby dokumentu od jeho sazby, přičemž o plnění typografických norem se automaticky stará sázecí systém.
 
-Tento návod se věnuje stažení, nastavení a užívání EZTeX pro tvorbu dokumentů. Předpokládá se zde předem úspěšně nainstalovaná distribuce LaTeXu, např. [MikTeX](https://miktex.org/) nebo [TeX Live](https://www.tug.org/texlive/), a základní znalost systému TeX.
+Tento návod se věnuje stažení, nastavení a užívání EZTeX pro tvorbu dokumentů. Předpokládá se zde předem úspěšně nainstalovaná distribuce TeXu, např. [MikTeX](https://miktex.org/), a základní znalost systému TeX.
 
 ## Stažení
 
