@@ -20,7 +20,7 @@ Další sekce se věnují stažení, konfiguraci a užívání EZTeX k tvorbě d
 
 EZTeX stáhneme kliknutím na tlačítko **Code** v horní části této stránky a poté **Download ZIP**. Archiv rozbalíme a přesuneme se do nově vzniklého adresáře.
 
-![Jak stáhnout EZTeX](.screenshots/download.png)
+![Jak stáhnout EZTeX](.screenshots/download.gif)
 
 ## Prvotní nastavení
 
@@ -57,3 +57,4 @@ Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** 
 - [Základní příkazy](navody/zaklady.md): Příkazy lišící se od standardního LaTeXu
 - [Obrázky](navody/obrazky.md): Jak je vkládat a jak se na ně odkazovat
 - [Citace](navody/citace.md): Jak citovat v textu
+- [Časté problémy](navody/problemy.md): Co dělat, když něco nefunguje
