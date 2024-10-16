@@ -46,8 +46,10 @@
 	\vspace*{\fill}
 \end{center}
 {\setlength\parindent{0pt} % bez odrazeni
-Vypracoval: \autor \\
-Vedoucí práce: \vedouci
+Autor: \autor
+\ifdefined\vedouci
+	\\ Vedoucí: \vedouci
+\fi
 \hfill {\misto}\the\year
 }
 \clearpage
