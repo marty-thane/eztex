@@ -56,3 +56,4 @@ Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** 
 
 - [Základní příkazy](navody/zaklady.md): Příkazy lišící se od standardního LaTeXu
 - [Obrázky](navody/obrazky.md): Jak je vkládat a jak se na ně odkazovat
+- [Citace](navody/citace.md): Jak citovat v textu
