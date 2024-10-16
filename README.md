@@ -20,7 +20,7 @@ Další sekce se věnují stažení, konfiguraci a užívání EZTeX k tvorbě d
 
 EZTeX stáhneme kliknutím na tlačítko **Code** v horní části této stránky a poté **Download ZIP**. Archiv rozbalíme a přesuneme se do nově vzniklého adresáře.
 
-![Jak stáhnout EZTeX](.github/download.png)
+![Jak stáhnout EZTeX](.screenshots/download.png)
 
 ## Prvotní nastavení
 
@@ -50,4 +50,4 @@ V editoru [TeXworks](https://www.tug.org/texworks/) (či jiném, pokud to prefer
 
 Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** (ne LuaTeX!). V TeXworks hledáme tuto nabídku v levém rohu horní lišty.
 
-![Jak zvolit kompilátor](.github/texworks.png)
+![Jak zvolit kompilátor](.screenshots/texworks.png)
