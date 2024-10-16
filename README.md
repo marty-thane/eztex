@@ -85,7 +85,7 @@ Citační databázi vytvoříme pomocí webové služby [Scribbr](https://www.sc
 
 ![Stažení citační databáze](.screenshots/scribbr.gif)
 
-Soubor je nutné uložit jako `reference.bib` do adresáře se zbytkem dokumentu. Pokud tak neučiníme, další kroky nebudou fungovat.
+Soubor je nutné uložit jako `reference.bib` do adresáře se zbytkem dokumentu. **Pokud tak neučiníme, další kroky nebudou fungovat.**
 
 Příkladem položky v databázi může být:
 ```bib
