@@ -69,8 +69,6 @@ Ujistěte se, že máte povolený modul `obrazky.tex`. Ten poskytuje podporu pro
 \img[<vyska>]{<popisek>}{<soubor>}
 ```
 
-Příkaz `\img` má také svou alternativu `\img*` (s hvězdičkou). Tu používáme v případě, kdy chceme překladači vnutit námi zvolenou pozici obrázku v textu.
-
 Na obrázky se v textu odkazujeme pomocí příkazu `\ref`. Identifikátor obrázku je shodný s jeho souborovým názvem. Příklad:
 ```tex
 \img{Obrázek psa}{pes.png}
