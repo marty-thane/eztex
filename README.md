@@ -56,11 +56,11 @@ Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** 
 
 ### Nadpisy
 
-Nadpisy prvního řádu jsou nečíslované. EZTeX má pro ně vlastní příkaz `\nsection`. Ten používejte místo klasického `\section`.
+Nadpisy prvního řádu jsou nečíslované. EZTeX má pro ně vlastní příkaz `\nsection{<nadpis>}`. Ten používejte místo klasického `\section{<nadpis>}`.
 
 ### Uvozovky
 
-Pro uvozování textu poskytuje EZTeX příkaz `\enquote` z knihovny `csquotes`. Ten používejte místo doslovných uvozovek.
+Pro uvozování textu poskytuje EZTeX příkaz `\enquote{<text>}` z knihovny `csquotes`. Ten používejte místo doslovných uvozovek.
 
 ### Obrázky
 
@@ -69,7 +69,7 @@ Ujistěte se, že máte povolený modul `obrazky.tex`. Ten poskytuje podporu pro
 \img[<vyska>]{<popisek>}{<soubor>}
 ```
 
-Na obrázky se v textu odkazujeme pomocí příkazu `\ref`. Identifikátor obrázku je shodný s jeho souborovým názvem. Příklad:
+Na obrázky se v textu odkazujeme pomocí příkazu `\ref{<identifikator>}`. Identifikátor obrázku je shodný s jeho souborovým názvem. Příklad:
 ```tex
 \img{Obrázek psa}{pes.png}
 Jak je vidět na obrázku \ref{pes.png},
