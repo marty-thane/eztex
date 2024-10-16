@@ -15,7 +15,6 @@ Další sekce se věnují stažení, konfiguraci a užívání EZTeX k tvorbě d
 - úspěšně nainstalovaná distribuce TeXu, např. [MiKTeX](https://miktex.org/)
 - základní znalost systému TeX
 
-<!-- predelat -->
 ## Jak stáhnout
 
 EZTeX stáhneme kliknutím na tlačítko **Code** v horní části této stránky a poté **Download ZIP**. Archiv rozbalíme a přesuneme se do nově vzniklého adresáře.
@@ -34,7 +33,7 @@ Metadata nám dovolují specifikovat údaje jako autor, název práce apod. Kaž
 <hodnota>
 }
 ```
-Přepsání výchozích hodnot nám dovoluje přizpůsobit si dokument na míru. Některá metadata u sebe mají komentář k jejich používání.
+Přepsáním výchozích hodnot si dokument přizpůsobíme na míru. Některá metadata u sebe mají komentář k jejich používání.
 
 ### Moduly
 
@@ -46,7 +45,7 @@ Všechny moduly jsou ve výchozím nastavení povoleny. **Toto je doporučeno ne
 
 ## Užívání
 
-V editoru [TeXworks](https://www.tug.org/texworks/) (či jiném, pokud to preferujeme) otevřeme soubor `obsah.tex` a do něj píšeme náš text. **Tvorba textu se od standardního LaTeXu v drobnostech liší, nepřeskakujte proto sekci Zvláštnosti.**
+V editoru [TeXworks](https://www.tug.org/texworks/) (či jiném, pokud to preferujeme) otevřeme soubor `obsah.tex` a do něj píšeme náš text. Tvorba textu se od standardního LaTeXu v drobnostech liší, čtěte proto dále.
 
 Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** (ne LuaTeX!). V TeXworks hledáme tuto nabídku v levém rohu horní lišty.
 
@@ -60,7 +59,7 @@ Nadpisy prvního řádu jsou nečíslované. EZTeX má pro ně vlastní příkaz
 
 ### Uvozovky
 
-Pro uvozování textu poskytuje EZTeX příkaz `\enquote` z knihovny `csquotes`. Ten používejte místo doslovných uvozovek (zpravidla nejsou typograficky správně).
+Pro uvozování textu poskytuje EZTeX příkaz `\enquote` z knihovny `csquotes`. Ten používejte místo doslovných uvozovek.
 
 ### Obrázky
 
@@ -75,10 +74,11 @@ Na obrázky se v textu odkazujeme pomocí příkazu `\ref`. Identifikátor obrá
 Jak je vidět na obrázku \ref{pes.png},
 psi jsou roztomilá zvířata.
 ```
+<!-- sem prijde obrazek toho, jak to vypada -->
 
 ### Citace
 
-Ujistěte se, že máte povolený modul `citace.tex`. Ten nám zpřístupňuje citační systém BibLaTeX.
+Ujistěte se, že máte povolený modul `citace.tex`. Ten nám zpřístupňuje citační systém.
 
 Citační databázi vytvoříme pomocí webové služby [Scribbr](https://www.scribbr.com/citation/generator/). Po zadání všech publikací klikneme na tři tečky v pravém horním rohu a vybereme **Export to LaTeX**. Ujistíme se, že stahovaná databáze je ve formátu **BibTeX** (ne BibLaTeX!).
 
@@ -104,4 +104,4 @@ V textu se na publikace odkazujeme podle jejich identifikátoru (zde `darwin-190
 3. LuaLaTeX (opět)
 4. LuaLaTeX (a ještě jednou)
 
-Toto naštěstí není třeba dělat pokaždé.
+Toto není třeba dělat pokaždé, stačí při prvotním překladu s citační databází a poté po každé změně v ní.
