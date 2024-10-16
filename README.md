@@ -50,7 +50,7 @@ V editoru [TeXworks](https://www.tug.org/texworks/) (či jiném, pokud to prefer
 
 Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** (ne LuaTeX!). V TeXworks hledáme tuto nabídku v levém rohu horní lišty.
 
-![Jak zvolit kompilátor](.screenshots/texworks.png)
+![Jak zvolit kompilátor](.screenshots/texworks.gif)
 
 ## Další čtení
 
