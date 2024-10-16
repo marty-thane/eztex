@@ -46,8 +46,12 @@ Všechny moduly jsou ve výchozím nastavení povoleny. **Toto je doporučeno ne
 
 ## Užívání
 
-V editoru [TeXworks](https://www.tug.org/texworks/) (či jiném, pokud to preferujeme) otevřeme soubor `obsah.tex` a do něj píšeme náš text. **Tvorba textu se od standardního LaTeXu v drobnostech liší, nepřeskakujte proto sekci Návody.**
+V editoru [TeXworks](https://www.tug.org/texworks/) (či jiném, pokud to preferujeme) otevřeme soubor `obsah.tex` a do něj píšeme náš text. **Tvorba textu se od standardního LaTeXu v drobnostech liší, nepřeskakujte proto sekci Další čtení.**
 
 Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** (ne LuaTeX!). V TeXworks hledáme tuto nabídku v levém rohu horní lišty.
 
 ![Jak zvolit kompilátor](.screenshots/texworks.png)
+
+## Další čtení
+
+- [Obrázky](navody/obrazky.md): Jak je vkládat a jak se na ně odkazovat
