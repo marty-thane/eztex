@@ -1,4 +1,9 @@
 %!TeX root=sablona.tex
+
+% Zakladni informace jako kdo je autorem, jaky je nazev prace apod. Pokud je
+% autorem zena, potom je nutne v souboru `sablona.tex` nahradit "Vypracoval:"
+% za "Vypracovala:". Toto bude v budoucnu osetreno lepe.
+
 \def\autor{%
 Petr Novák
 }
@@ -8,20 +13,28 @@ Mgr. Lucie Zákravská
 }
 
 \def\nazev{%
-Název práce
+Vliv počasí na chování ptáků
 }
+
+% Typ prace se v dokumentu vytiskne jako podnadpis k nazvu a je implicitne
+% velkymi pismeny.
 
 \def\typ{%
 seminární práce
 }
 
 \def\misto{%
-Ústí nad Labem
+Česká Kamenice
 }
 
 \def\organizace{%
 Základní škola T. G. Masaryka a gymnázium Česká Kamenice
 }
+
+% Abstrakt a klicova slova zpravidla nejsou potreba pro seminarni prace. Pokud
+% po vas neni pozadovano, muzete bloky korespondujici k abstraktu a klicovym
+% slovum uplne smazat. Sablona se tomuto prizpusobi a nebude je ve finalnim
+% dokumentu vykreslovat.
 
 \def\abstrakt{%
 Stručné a srozumitelné shrnutí obsahu práce. Abstrakt je nejvýše v rozsahu
@@ -32,6 +45,9 @@ případě závěrečné práce napsané v jazyce anglickém se český abstrakt
 \def\klicovaslova{%
 seznam klíčových slov, která nejlépe vystihují obsah práce
 }
+
+% Nektere organizace vyzaduji presne zneni prohlaseni. V tom pripade ho zde
+% muzete zmenit. Pokud po vas neni vyzadovano, lze korespondujici blok smazat.
 
 \def\prohlaseni{%
 Prohlašuji, že jsem tuto diplomovou/bakalářskou práci vypracoval(a) samostatně
