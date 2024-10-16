@@ -1,4 +1,5 @@
 # EZTeX
+<!-- sem prijde obrazek toho, jak to vypada -->
 
 EZTeX je šablonová nadstavba nad LaTeX pro tvorbu seminárních, maturitních a jiných prací. Jeho přednosti zahrnují:
 
