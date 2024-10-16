@@ -12,7 +12,7 @@ Text, který právě čtete, je součástí dokumentace. **Pozorně si ho přeč
 
 Další sekce se věnují stažení, konfiguraci a užívání EZTeX k tvorbě dokumentů. Předpokládá se:
 
-- úspěšně nainstalovaná distribuce TeXu, např. [MikTeX](https://miktex.org/)
+- úspěšně nainstalovaná distribuce TeXu, např. [MiKTeX](https://miktex.org/)
 - základní znalost systému TeX
 
 <!-- predelat -->
