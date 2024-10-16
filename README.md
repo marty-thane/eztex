@@ -1,87 +1,53 @@
 # EZTeX
 
-**UPOZORNĚNÍ: Toto je work-in-progress, projekt se bude v budoucnu rozvíjet. Pravidelně aktualizujte svoji instalaci.**
+EZTeX je šablonová nadstavba nad LaTeX pro tvorbu seminárních, maturitních a jiných prací. Jeho přednosti zahrnují:
 
-EZTeX je šablonová nadstavba nad LuaLaTeX/BibLaTeX pro tvorbu seminárních, maturitních a jiných prací. Jejím účelem je oddělení procesu tvorby dokumentu od jeho sazby, přičemž o plnění typografických norem se automaticky stará sázecí systém.
+- minimální nároky na uživatele
+- plnění typografických norem
+- citace podle [ČSN ISO 690](https://www.iso690.zcu.cz/)
 
-Tento návod se věnuje stažení, nastavení a užívání EZTeX pro tvorbu dokumentů. Předpokládá se zde předem úspěšně nainstalovaná distribuce TeXu, např. [MikTeX](https://miktex.org/), a základní znalost systému TeX.
+## Než začneme
 
-## Stažení
+Text, který právě čtete, je součástí dokumentace. **Pozorně si ho přečtěte, než začnete EZTeX používat.**
+
+Další sekce se věnují stažení, konfiguraci a užívání EZTeX k tvorbě dokumentů. Předpokládá se:
+
+- úspěšně nainstalovaná distribuce TeXu, např. [MikTeX](https://miktex.org/)
+- základní znalost systému TeX
+
+<!-- predelat -->
+## Jak stáhnout
 
 EZTeX stáhneme kliknutím na tlačítko **Code** v horní části této stránky a poté **Download ZIP**. Archiv rozbalíme a přesuneme se do nově vzniklého adresáře.
 
 ![Jak stáhnout EZTeX](.github/download.png)
 
-## Nastavení
+## Prvotní nastavení
 
-Veškerá nastavení se provádí v souboru `nastaveni.tex`. Ten má dvě části: metadata a moduly.
+Všechna nastavení jsou rozdělena ve dvou souborech: `metadata.tex` a `moduly.tex`. Nastavení provádíme úpravou těchto souborů. Změny pouze ukládáme, nekompilujeme!
 
-Metadata nám dovolují specifikovat informace typu autor, název apod. V souboru je poznáme podle následujícího formátu:
+### Metadata 
+
+Metadata nám dovolují specifikovat údaje jako autor, název práce apod. Každá definice má následující formát:
 ```tex
 \def\<klic>{%
 <hodnota>
 }
 ```
-Přepsáním výchozích hodnot si dokument přizpůsobíme na míru. Některá metadata u sebe mají poznámku k jejich používání.
+Přepsání výchozích hodnot nám dovoluje přizpůsobit si dokument na míru. Některá metadata u sebe mají komentář k jejich používání.
 
-Druhou částí jsou moduly, což není nic jiného než kusy kódu, které do našeho dokumentu zavádí nějakou funkcionalitu. Příkladem může být podpora obrázků, microtyping... V souboru je poznáme podle tvaru:
+### Moduly
+
+Moduly nejsou nic jiného než kusy kódu, které do dokumentu zavádí nějakou funkčnost. Příkladem může být podpora obrázků, microtyping... V souboru má každý modul následující tvar:
 ```tex
 \input{moduly/<nazev>}
 ```
-Všechny moduly jsou ve výchozím nastavení povoleny. Toto doporučujeme neměnit, pokud nevíte, co děláte.
+Všechny moduly jsou ve výchozím nastavení povoleny. **Toto je doporučeno neměnit, pokud nevíte, co děláte.** Moduly lze zakázat zakomentováním korespondujícího řádku.
 
 ## Užívání
 
-Po provedení konfigurace je možné začít psát náš dokument. Otevřeme [TeXworks](https://www.tug.org/texworks/) (či jiný editor) a v něm soubor `obsah.tex`. Další postup už je shodný s normální tvorbou v systému LaTeX.
+V editoru [TeXworks](https://www.tug.org/texworks/) (či jiném, pokud to preferujeme) otevřeme soubor `obsah.tex` a do něj píšeme náš text. **Tvorba textu se od standardního LaTeXu v drobnostech liší, nepřeskakujte proto sekci Návody.**
 
-Před kompilací se ujistíme, že máme jako kompilátor zvolený **LuaLaTeX** (V TeXworks v levém rohu horní lišty.)
+Před kompilací se ujistíme, že máme jako překladač zvolený **LuaLaTeX** (ne LuaTeX!). V TeXworks hledáme tuto nabídku v levém rohu horní lišty.
 
 ![Jak zvolit kompilátor](.github/texworks.png)
-
-V následující sekci se dozvíte o zvláštnostech a specifikách EZTeXu a jakým způsobem řešit některé úkony.
-
-## Zvláštnosti
-
-### Nadpisy
-
-Nadpisy prvního řádu nejsou číslované. Toto je převzato z výchozího nastavení některých objektů (obsah, odkazy). Z technických důvodů má EZTeX svůj vlastní příkaz `\nsection{}`. Používejte ho místo klasického `\section{}`
-
-### Uvozovky
-
-Pokud chceme uvodit kus textu, používáme k tomu `\enquote{}`.
-
-### Obrázky
-
-Ujistěte se, že máte povolený modul `obrazky.tex`. Ten poskytuje podporu pro grafiku a příkaz `\img` pro pohodlné vkládání obrázků. Povinnými parametry jsou popisek a cesta k souboru, volitelně lze potom specifikovat výšku, tedy velikost.
-```tex
-\img[<vyska>]{<popisek>}{<soubor>}
-```
-
-Pokud se nám nelíbí, kam LuaLaTeX obrázek umisťuje, můžeme mu vnutit námi zvolenou pozici v textu pomocí alternativy `\img*`.
-
-Na obrázky se lze v textu odkazovat přes název souboru pomocí `\ref{}`:
-```tex
-\img{Obrázek psa}{pes.png}
-Jak je vidět na obrázku \ref{pes.png},
-psi jsou roztomilá zvířata.
-```
-### Citace
-
-EZTeX využívá systém BibLaTeX. Ten sprošťuje uživatele nutnosti formátovat citace ručně; místo toho si zavádíme jednotnou citační databázi, na kterou se v textu odkazujeme. EZTeX při citování dodržuje normu [ČSN ISO 690](https://www.iso690.zcu.cz/).
-
-Citační databázi vytvoříme pomocí webové služby [Scribbr](https://www.scribbr.com/citation/generator/). Po vytvoření klikneme na tři tečky v pravém horním rohu a vybereme **Export to LaTeX**. Ujistíme se, že stahovaná databáze je ve formátu **BibTeX** a ne **BibLaTeX**.
-
-![Stažení citační databáze](.github/scribbr.png)
-
-Soubor ukládáme jako `reference.bib` do adresáře se zbytkem dokumentu. Pokud tak neučiníme přesně, další kroky nebudou fungovat.
-
-Příkladem položky v databázi může být:
-```bib
-@book{darwin-1900,
-	author = {Darwin, Charles},
-	title = {{The origin of species, by Charles Darwin.}},
-	year = {1900},
-	doi = {10.5962/bhl.title.46292},
-}
-```
-V textu se na tuto knihu budeme odkazovat jejím identifikátorem, což je vždy první položka (zde tedy `darwin-1990`). V textu se odkazujeme pomocí příkazu `\cite{<identifikator>}`. Pokud je po nás vyžadováno citování v poznámce pod čarou, použijeme místo toho `\footfullcite{}`
