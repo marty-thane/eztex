@@ -24,9 +24,9 @@ EZTeX stáhneme kliknutím na tlačítko **Code** v horní části této stránk
 
 ## Prvotní nastavení
 
-Všechna nastavení jsou rozdělena do dvou souborů: `metadata.tex` a `moduly.tex`. Nastavení provádíme úpravou těchto souborů. Změny pouze ukládáme, nekompilujeme!
+Všechna nastavení jsou rozdělena do dvou souborů: `udaje.tex` a `moduly.tex`. Nastavení provádíme úpravou těchto souborů. Změny pouze ukládáme, nekompilujeme!
 
-### Metadata 
+### Údaje
 
 Metadata nám dovolují specifikovat údaje jako autor, název práce apod. Každá definice má následující formát:
 ```tex
@@ -34,7 +34,7 @@ Metadata nám dovolují specifikovat údaje jako autor, název práce apod. Kaž
 <hodnota>
 }
 ```
-Přepsáním výchozích hodnot si dokument přizpůsobíme na míru. Některá metadata u sebe mají komentář k jejich používání.
+Přepsáním výchozích hodnot si dokument přizpůsobíme na míru. Některé údaje u sebe mají komentář k jejich používání.
 
 ### Moduly
 
