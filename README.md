@@ -71,11 +71,11 @@ Ujistěte se, že máte povolený modul `obrazky.tex`. Ten poskytuje podporu pro
 
 Na obrázky se v textu odkazujeme pomocí příkazu `\ref{<identifikator>}`. Identifikátor obrázku je shodný s jeho souborovým názvem. Příklad:
 ```tex
-\img{Obrázek psa}{pes.png}
-Jak je vidět na obrázku \ref{pes.png},
+\img{Obrázek psa}{pes.jpg}
+Jak je vidět na obrázku \ref{pes.jpg},
 psi jsou roztomilá zvířata.
 ```
-<!-- sem prijde obrazek toho, jak to vypada -->
+![Výsledek vložení obrázku](.screenshots/dog.png)
 
 ### Citace
 
@@ -97,6 +97,8 @@ Příkladem položky v databázi může být:
 }
 ```
 V textu se na publikace odkazujeme podle jejich identifikátoru (zde `darwin-1900`). Používáme k tomu příkaz `\cite{<identifikator>}`. Pokud je po nás vyžadováno citování v poznámce pod čarou, používáme `\footfullcite{<identifikator>}`.
+
+![Ukázka citace pod čarou](.screenshots/scribbr.gif)
 
 Úplné vykreslení citací v dokumentu je tak trochu krkolomné. Je nutné dokument přeložit následujícím způsobem:
 
