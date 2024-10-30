@@ -22,9 +22,11 @@ Předpokládá se:
 ## Jak stáhnout
 
 EZTeX stáhneme kliknutím na tlačítko **Code** v horní části této stránky a poté
-**Download ZIP**. Archiv rozbalíme a přesuneme se do nově vzniklého adresáře.
+**Download ZIP**.
 
 ![Jak stáhnout EZTeX](.screenshots/download.gif)
+
+Archiv rozbalíme a přesuneme se do nově vzniklého adresáře.
 
 ## Prvotní nastavení
 
@@ -135,10 +137,10 @@ nás vyžadováno citování v poznámce pod čarou, používáme
 Úplné vykreslení citací v dokumentu je tak trochu krkolomné. Je nutné dokument
 přeložit následujícím způsobem:
 
-1. LuaLaTeX (tak, jak jsme zvyklí)
-2. BibTeX (v TeXworks z nabídky vlevo nahoře)
-3. LuaLaTeX (opět)
-4. LuaLaTeX (a ještě jednou)
+1. **LuaLaTeX** (tak, jak jsme zvyklí)
+2. **BibTeX** (v TeXworks z nabídky vlevo nahoře)
+3. **LuaLaTeX** (opět)
+4. **LuaLaTeX** (a ještě jednou)
 
 Toto není třeba dělat pokaždé, stačí jednou po vytvoření citační databáze a
 poté po každé změně v ní.
