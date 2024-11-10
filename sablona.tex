@@ -31,6 +31,10 @@
 	\stepcounter{section}
 }
 
+% cislovani sekci nizsiho radu respektuje blok vyse
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsection}}
+
 % eztex moduly
 \input{moduly.tex}
 
